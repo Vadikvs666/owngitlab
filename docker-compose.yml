@@ -12,7 +12,7 @@ services:
         nginx['listen_https'] = false               # Отключаем HTTPS внутри контейнера
         gitlab_rails['gitlab_shell_ssh_port'] = 2222 # SSH на нестандартном порту
     ports:
-      - '8080:8080'    # Пробрасываем только внутренний порт
+      - '7070:7070'    # Пробрасываем только внутренний порт
       - '2222:22'      # SSH на нестандартном порту
     volumes:
       - './config:/etc/gitlab'
