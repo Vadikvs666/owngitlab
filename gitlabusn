@@ -19,9 +19,9 @@ server {
     #ssl_certificate_key /path/to/your/private.key;
 
     # Безопасность SSL
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
-    ssl_prefer_server_ciphers off;
+    #ssl_protocols TLSv1.2 TLSv1.3;
+    #ssl_ciphers ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512;
+    #ssl_prefer_server_ciphers off;
 
     # Проксирование HTTP
     location / {
