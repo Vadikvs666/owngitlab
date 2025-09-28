@@ -4,10 +4,10 @@ services:
     image: 'gitlab/gitlab-ce:latest' # Community Edition
     container_name: gitlab
     restart: always
-    hostname: 'gitlab.your-domain.com' # Ваш домен
+    hostname: 'usn.hozomsk.ru' # Ваш домен
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://gitlab.your-domain.com' # Пока оставляем http, SSL настроим в Nginx
+        external_url 'http://usn.hozomsk.ru' # Пока оставляем http, SSL настроим в Nginx
         nginx['listen_port'] = 8080                  # GitLab слушает на порту 8080 внутри контейнера
         nginx['listen_https'] = false               # Отключаем HTTPS внутри контейнера
         gitlab_rails['gitlab_shell_ssh_port'] = 2222 # SSH на нестандартном порту
